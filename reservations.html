@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<title>Reservations</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.defaultvalue.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#fullname, #validemail, #message").defaultvalue("Full Name", "Email Address", "Message");
+    $('#shout a').click(function () {
+        var to = $(this).attr('href');
+        $.scrollTo(to, 1200);
+        return false;
+    });
+    $('a.topOfPage').click(function () {
+        $.scrollTo(0, 1200);
+        return false;
+    });
+    $("#tabcontainer").tabs({
+        event: "click"
+    });
+});
+</script>
+<!-- Homepage Only Scripts -->
+<script type="text/javascript" src="scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.cycle.setup.js"></script>
+<script type="text/javascript" src="scripts/piecemaker/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+var flashvars = {};
+flashvars.cssSource = "scripts/piecemaker/piecemaker.css";
+flashvars.xmlSource = "scripts/piecemaker/piecemaker.xml";
+var params = {};
+params.play = "false";
+params.menu = "false";
+params.scale = "showall";
+params.wmode = "transparent";
+params.allowfullscreen = "true";
+params.allowscriptaccess = "sameDomain";
+params.allownetworking = "all";
+swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '430', '10', null, flashvars, params, null);
+</script>
+<!-- End Homepage Only Scripts -->
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="topbar" class="clear">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="https://maps.google.com.au/maps?q=122+ferny+avenue+surfers+paradise&safe=active&ie=UTF-8&hl=en" target="_blank">Map &amp; Directions</a></li>
+      <li class="last"><a href="aboutus.html">About Us</a></li>
+    </ul>
+    <form action="#" method="post" id="search">
+      <fieldset>
+        <legend>Site Search</legend>
+        <input type="text" value="Search Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+        <input type="image" id="go" src="images/search.gif" alt="Search" />
+      </fieldset>
+    </form>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="header" class="clear"><a href="index.html"><img src="Logos/bannerColourWhite.png" alt="" /></a>
+    <div class="fl_left">
+      <h1>&nbsp;</h1>
+      
+    </div>
+    <div id="topnav">
+      <ul>
+        <li class="last"><a href="gallery.html">Gallery</a><span>view what awaits you</span></li>
+        <li><a href="forum.html">Forum</a><span>discuss about the hotel</span></li>
+        <li><a href="dining.html">Dining</a><span>view dining options</span>
+          <ul>
+            <li><a href="dining.html#theline">The Line</a></li>
+            <li><a href="dining.html#nadaman">Nadaman Japanese Restaurant </a></li>
+            <li><a href="dining.html#blubar">Blu Bar</a></li>
+          </ul>        
+		</li>
+        <li><a href="facilities.html">facilities</a><span>view facilities</span></li>
+        <li class="active"><a href="reservations.html">Reservations</a><span>reserve a room</span></li>
+        <li><a href="index.html">Homepage</a><span>Homepage</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+<div id="container" class="clear">
+    <!-- ####################################################################################################### -->
+     
+    <!-- ####################################################################################################### -->
+    <div id="column">
+      <div class="holder">
+        <h2 class="title"><img src="images/demo/manager.jpg" alt="" />Manager's Deals </h2>
+        <p>Enjoy a Deluxe room for two this summer for a seven nights with two nights free. Whutawaye members only.</p>
+      </div>
+      <div id="featured">
+        <ul>
+          <li>
+            <h2>Special Deals</h2>
+            <p class="imgholder"><img src="images/demo/specialoffer.jpg" alt="" /></p>
+            <p><strong>Standard Room Deals:</strong> <a href="#">20% off all standard rooms.</a></p>
+        <p>School's out, fun's in. Enjoy a well deserved holiday with you and your loved ones for 20% off of all standard rooms</a>.</p>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  <div id="content">
+  
+  
+  
+  
+  
+  
+    <h1>Make a Reservation</h1>
+   
+    <div class="form_row" align="left">
+        
+        <select name="day">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+        <select name="month">
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>Mar</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>Aug</option>
+          <option>Sep</option>
+          <option>Oct</option>
+          <option>Nov</option>
+          <option>Dec</option>
+          <label>Arrival</label>
+        </select>
+        <select name="year">
+         
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+        </select>
+        &nbsp; Arrival
+    </div>
+   
+      <div class="form_row">
+        
+        <select name="day">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+        <select name="month">
+          <option>Jan</option>
+          <option>Feb</option>
+          <option>Mar</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>Aug</option>
+          <option>Sep</option>
+          <option>Oct</option>
+          <option>Nov</option>
+          <option>Dec</option>
+        </select>
+        <select name="year">
+          
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+          <option>2018</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+        </select>
+      &nbsp; Departure
+      </div>
+      
+      <div class="form_row">
+        <label>Persons:</label>
+        <input class="inputfield" name="person" type="text" style="width: 30px; margin-right: 20px;" />
+        <label>&nbsp; Rooms:</label>
+        <input class="inputfield" name="person" type="text" style="width: 30px;" />
+      </div>
+      <div class="cleaner_h20">&nbsp;</div>
+    <div class="rc_btn_01">
+      <p><a href="#">Check Availability</a> 
+</p>
+      <p>&nbsp;</p>
+      <h2>Prices <sub> (Does not reflect acutal prices).</sub></h2>
+      <table summary="Summary Here" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>No. People</th>
+            <th>Standard</th>
+            <th>Deluxe</th>
+            <th>Luxury</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="light">
+            <td>1 Adult </td>
+            <td>$120/night</td>
+            <td>$190/night</td>
+            <td>$290/night</td>
+          </tr>
+          <tr class="dark">
+            <td>2 Adults </td>
+            <td>$240/night</td>
+            <td>$380/night</td>
+            <td>$580/night</td>
+          </tr>
+          <tr class="light">
+            <td>3 Adults</td>
+            <td>$360/night</td>
+            <td>$870/night</td>
+            <td>$870/night</td>
+          </tr>
+          <tr class="dark">
+            <td>+ 1 Child</td>
+            <td>$90/night</td>
+            <td>$140/night</td>
+            <td>$210/night</td>
+          </tr>
+          <tr class="light">
+            <td>+ 2 Children</td>
+            <td>$180/night</td>
+            <td>$280/night</td>
+            <td>$420/night</td>
+          </tr>
+        </tbody>
+      </table>
+    <p><p>&nbsp;</p></div>
+  </div>
+      
+      <!-- ####################################################################################################### -->
+ 
+      </p>
+    <div class="clear"></div>
+    
+  </div>
+</div>
+      
+   <!-- ####################################################################################################### -->   
+      
+    <!-- ####################################################################################################### -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="footer" class="clear">
+    <div class="fl_left">
+      <div class="about_us border">
+        <h2>About Us</h2>
+        <p>We welcome you to luxuriate in the acres of wonderfully landscaped gardens, relax poolside or pamper yourself at Surfers Paradise's first CHI, The Spa at Whutawaye. As night falls, find the evening you desire with dinner at Waterfall Cafe, The Line,or the Nadaman Japanese Restaurant.&nbsp;Then, relax in the Lobby&nbsp;Court with musical entertainment or unwind in the quiet&nbsp;gardens.</p>
+        <p>&nbsp;</p>
+        <p>We welcome you and&nbsp;wait to serve you at Whutawaye Hotel, Gold Coast. Your home away from home</p>
+      </div>
+      <div id="contact" class="clear">
+        <h2>Contact Us</h2>
+        <div class="fl_left">
+          <form method="post" action="#">
+            <label for="fullname">Name:</label>
+            <input type="text" name="fullname" id="fullname" value="" />
+            <label for="validemail">Email:</label>
+            <input type="text" name="validemail" id="validemail" value="" />
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="45" rows="10"></textarea>
+            <button type="submit" value="submit"><span>Submit</span></button>
+          </form>
+        </div>
+        <div class="fl_right">
+          <address>
+          <strong>Whutawaye Hotels</strong>
+          <br />
+          122 Ferny Avenue<br />
+          Surfers Paradise<br />
+          Postcode/Zip: 4217 
+          </address>
+          <ul>
+            <li><strong class="title">Tel:</strong><br />
+            (07) 5573 8555</li>
+            <li><strong class="title">Fax:</strong><br />
+              (07) 5573 8500 </li>
+            <li><strong class="title">Email:</strong><br />
+              <a href="#">admin@whutawaye.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="fl_right">
+      <div id="tabcontainer" class="border">
+        <ul id="tabnav">
+          <li><a href="#tabs-1">From The Blog</a></li>
+          <li><a href="#tabs-2">Latest Tweets</a></li>
+          <li class="last"><a href="#tabs-3">Interesting Links</a></li>
+        </ul>
+        <div id="tabs-1" class="tabcontainer">
+          <ul class="blogposts">
+            <li>
+              <p class="posttitle">New Menu by Chef Emil Minev</p>
+              <p class="publishedon">Published on 11 Sep 2001, by Whutawaye Hotels</p>
+              <div></div>
+              <p>Chef Emil Minev fromWhutawaye Hotels presents his eclectic menu until 22 June. <a href="http://t.co/lMF1Y397k0" data-pre-embedded="true" dir="ltr" wotsearchprocessed="true">pic.twitter.com/lMF1Y397k0</a></p>
+              <div wotsearchtarget="_p_nrgummkzgm4to2zq.t.co">&nbsp;</div>
+              </p>
+              <p class="postintro">&nbsp;</p>
+              <p class="readmore"><a href="#">Read More &raquo;</a></p>
+            </li>
+            <li class="last">
+              <p class="posttitle">Opening of New Health Club</p>
+              <p class="publishedon">Published on 11 Sep 2001, by Whutawaye Hotels</p>
+              <p class="postintro">Undress to impress for beach season, our Health Club has state-of-the-art facilities for everyone.<a href="http://t.co/tS8L9OYDWw" data-pre-embedded="true" dir="ltr" wotsearchprocessed="true">pic.twitter.com/tS8L9OYDWw</a></p>
+              <div wotsearchtarget="_p_orjtqtbzj5muiv3x.t.co">&nbsp;</div>
+              <p class="readmore"><a href="#">Read More &raquo;</a></p>
+            </li>
+          </ul>
+        </div>
+        <!-- ########### -->
+        <div id="tabs-2" class="tabcontainer">
+          <ul class="twitterfeed">
+            <li><a href="#">@WhutawayeHotels</a> Celebrate  #ThirstyThursday with the refreshing Gin Basil Smash @WhutawayeHotels! pic.twitter.com/0kkZK4G6Bs . <span>1 day ago</span></li>
+            <li><a href="#">@WhutawayeHotels</a> Enjoy a host of privileges: express check-in, free breakfast, health club access &amp; more @ #WhutawayeHotels #HorizonClub. pic.twitter.com/hKBPWI1YGf. <span>1 day ago</span></li>
+            <li><a href="#">@WhutawayeHotels</a> Splashes of vibrant plants, flowers, &amp; mini pineapples grace the lobby of #WhutawayeHotelGoldCoast. pic.twitter.com/c5ZjDbT1mF. <span>1 day ago</span></li>
+            <li class="last"><a href="#">@WhutawayeHotels</a> Staff at Whutawaye Hotel in #SurfersParadise built turtle sand sculptures to raise awareness for turtle conservation #CSR pic.twitter.com/R5fjYaYYJc  </li>
+            <li class="last"><span>2 days ago</span></li>
+          </ul>
+        </div>
+        <!-- ########### -->
+        <div id="tabs-3" class="tabcontainer">
+          <ul><li><a href="#">www.facebook.com/WhutawayeHotels</a></li>
+            <li><a href="#">www.twitter.com/WhutawayeHotels</a></li>
+            <li><a href="#">www.linkedin.com/WhutawayeHotels</a></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <h2>Keep Up To Date</h2>
+      <ul class="socialize">
+        <li><span>Facebook:</span> <a href="#">www.facebook.com/WhutawayeHotels</a></li>
+        <li><span>Twitter:</span> <a href="#">www.twitter.com/WhutawayeHotels</a></li>
+        <li class="last"><span>LinkedIn:</span> <a href="#">www.linkedin.com/WhutawayeHotels</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="backtotop"><a href="#top" class="topOfPage">To The Top</a></div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="#">whutawayehotels.com</a></p>
+    <p class="fl_right">Website by Daniel<a href="http://www.os-templates.com/" title="Free Website Templates"></a></p>
+  </div>
+</div>
+</body>
+</html>

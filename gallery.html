@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<title>Gallery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.defaultvalue.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#fullname, #validemail, #message").defaultvalue("Full Name", "Email Address", "Message");
+    $('#shout a').click(function () {
+        var to = $(this).attr('href');
+        $.scrollTo(to, 1200);
+        return false;
+    });
+    $('a.topOfPage').click(function () {
+        $.scrollTo(0, 1200);
+        return false;
+    });
+    $("#tabcontainer").tabs({
+        event: "click"
+    });
+});
+</script>
+<!-- Homepage Only Scripts -->
+<script type="text/javascript" src="scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.cycle.setup.js"></script>
+<script type="text/javascript" src="scripts/piecemaker/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+var flashvars = {};
+flashvars.cssSource = "scripts/piecemaker/piecemaker.css";
+flashvars.xmlSource = "scripts/piecemaker/piecemaker.xml";
+var params = {};
+params.play = "false";
+params.menu = "false";
+params.scale = "showall";
+params.wmode = "transparent";
+params.allowfullscreen = "true";
+params.allowscriptaccess = "sameDomain";
+params.allownetworking = "all";
+swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '430', '10', null, flashvars, params, null);
+</script>
+<!-- End Homepage Only Scripts -->
+
+
+
+
+<!--lightbox scripts-->
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lightbox.js"></script>
+<link href="css/lightbox.css" rel="stylesheet"/>
+<!-- end lightbox scripts-->
+
+
+</head>
+
+
+
+
+<body id="top">
+<div class="wrapper col1">
+  <div id="topbar" class="clear">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <li><a href="https://maps.google.com.au/maps?q=122+ferny+avenue+surfers+paradise&safe=active&ie=UTF-8&hl=en" target="_blank">Map &amp; Directions</a></li>
+      <li class="last"><a href="aboutus.html">About Us</a></li>
+    </ul>
+    <form action="#" method="post" id="search">
+      <fieldset>
+        <legend>Site Search</legend>
+        <input type="text" value="Search Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+        <input type="image" id="go" src="images/search.gif" alt="Search" />
+      </fieldset>
+    </form>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="header" class="clear"><a href="index.html"><img src="Logos/bannerColourWhite.png" alt="" /></a>
+    <div class="fl_left">
+      <h1>&nbsp;</h1>
+      
+    </div>
+    <div id="topnav">
+      <ul>
+        <li class="active"><a href="gallery.html">Gallery</a><span>view what awaits you</span></li>
+        <li><a href="forum.html">Forum</a><span>discuss about the hotel</span></li>
+        <li><a href="dining.html">Dining</a><span>view dining options</span>
+          <ul>
+            <li><a href="dining.html#theline">The Line</a></li>
+            <li><a href="dining.html#nadaman">Nadaman Japanese Restaurant </a></li>
+            <li><a href="dining.html#blubar">Blu Bar</a></li>
+          </ul>        
+		</li>
+        <li><a href="facilities.html">facilities</a><span>view facilities</span></li>
+        <li><a href="reservations.html">Reservations</a><span>reserve a room</span></li>
+        <li><a href="index.html">Homepage</a><span>Homepage</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  <div id="container" class="clear">
+    <!-- ####################################################################################################### -->
+    <div id="shout" class="clear">
+      <div class="fl_left">
+        <h2>Search for Available Rooms</h2>
+        <p>Why not try our services today, you won't regret your choice!</p>
+      </div>
+      <p class="fl_right"><a href="reservations.html">Find rooms</a></p>
+    </div>
+    <!-- ####################################################################################################### -->
+    <h1>Whutawaye Digital Gallery</h1>
+    <div class="gallery clear">
+      <ul>
+        <li class="first"><img src="images/gallery/572330.jpg" alt="" /></li>
+        
+        <li><a href="images/gallery/1-174150-1.jpg" rel="lightbox[roadtrip]" 
+        title="Image 1"><img src="images/gallery/1-174150-1.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/1-174150-4.jpg" rel="lightbox[roadtrip]"  
+		title="Image 2"><img src="images/gallery/1-174150-4.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/1-174150-2.jpg" rel="lightbox[roadtrip]"  
+        title="Image 3"><img src="images/gallery/1-174150-2.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/1-174150-3.jpg" rel="lightbox[roadtrip]"  
+        title="Image 4"><img src="images/gallery/1-174150-3.jpg" alt="" /></a></li>
+        
+        <li class="first"><a href="images/gallery/3-174150-5.jpg" rel=				        "lightbox[roadtrip]"  
+        title="Image 5"><img src="images/gallery/3-174150-5.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/3-174150-3.jpg" rel="lightbox[roadtrip]" 
+        title="Image 6"><img src="images/gallery/3-174150-3.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/3-174150-4.jpg" rel="lightbox[roadtrip]" 
+        title="Image 7"><img src="images/gallery/3-174150-4.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/2-174150-3.jpg" rel="lightbox[roadtrip]"  
+        title="Image 8"><img src="images/gallery/2-174150-3.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/2-174150-2.jpg" rel="lightbox[roadtrip]"  
+        title="Image 9"><img src="images/gallery/2-174150-2.jpg" alt="" /></a></li>
+        
+        <li class="first"><a href="images/gallery/3-174150-1.jpg" rel="lightbox[roadtrip]"  
+        title="Image 10"><img src="images/gallery/3-174150-1.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/3-174150-2.jpg" rel="lightbox[roadtrip]"  
+        title="Image 11"><img src="images/gallery/3-174150-2.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/3-174150-6.jpg" rel="lightbox[roadtrip]"  
+        title="Image 12"><img src="images/gallery/3-174150-6.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/2-174150-4.jpg" rel="lightbox[roadtrip]"  
+        title="Image 13"><img src="images/gallery/2-174150-4.jpg" alt="" /></a></li>
+        
+        <li><a href="images/gallery/2-174150-1.jpg" rel="lightbox[roadtrip]"  
+        title="Image 14"><img src="images/gallery/2-174150-1.jpg" alt="" /></a></li>
+      
+      </ul>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="pagination">
+      <ul>
+        <li class="prev"><a href="#">&laquo; Previous</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li class="splitter">&hellip;</li>
+        <li><a href="#">6</a></li>
+        <li class="current">7</li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li class="splitter">&hellip;</li>
+        <li><a href="#">14</a></li>
+        <li><a href="#">15</a></li>
+        <li class="next"><a href="#">Next &raquo;</a></li>
+      </ul>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="footer" class="clear">
+    <div class="fl_left">
+      <div class="about_us border">
+        <h2>About Us</h2>
+        <p>We welcome you to luxuriate in the acres of wonderfully landscaped gardens, relax poolside or pamper yourself at Surfers Paradise's first CHI, The Spa at Whutawaye. As night falls, find the evening you desire with dinner at Waterfall Cafe, The Line,or the Nadaman Japanese Restaurant.&nbsp;Then, relax in the Lobby&nbsp;Court with musical entertainment or unwind in the quiet&nbsp;gardens.</p>
+        <p>&nbsp;</p>
+        <p>We welcome you and&nbsp;wait to serve you at Whutawaye Hotel, Gold Coast. Your home away from home</p>
+      </div>
+      <div id="contact" class="clear">
+        <h2>Contact Us</h2>
+        <div class="fl_left">
+          <form method="post" action="#">
+            <label for="fullname">Name:</label>
+            <input type="text" name="fullname" id="fullname" value="" />
+            <label for="validemail">Email:</label>
+            <input type="text" name="validemail" id="validemail" value="" />
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="45" rows="10"></textarea>
+            <button type="submit" value="submit"><span>Submit</span></button>
+          </form>
+        </div>
+        <div class="fl_right">
+          <address>
+          <strong>Whutawaye Hotels</strong>
+          <br />
+          122 Ferny Avenue<br />
+          Surfers Paradise<br />
+          Postcode/Zip: 4217 
+          </address>
+          <ul>
+            <li><strong class="title">Tel:</strong><br />
+            (07) 5573 8555</li>
+            <li><strong class="title">Fax:</strong><br />
+              (07) 5573 8500 </li>
+            <li><strong class="title">Email:</strong><br />
+              <a href="#">admin@whutawaye.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="fl_right">
+      <div id="tabcontainer" class="border">
+        <ul id="tabnav">
+          <li><a href="#tabs-1">From The Blog</a></li>
+          <li><a href="#tabs-2">Latest Tweets</a></li>
+          <li class="last"><a href="#tabs-3">Interesting Links</a></li>
+        </ul>
+        <div id="tabs-1" class="tabcontainer">
+          <ul class="blogposts">
+            <li>
+              <p class="posttitle">New Menu by Chef Emil Minev</p>
+              <p class="publishedon">Published on 11 Sep 2001, by Whutawaye Hotels</p>
+              <div></div>
+              <p>Chef Emil Minev fromWhutawaye Hotels presents his eclectic menu until 22 June. <a href="http://t.co/lMF1Y397k0" data-pre-embedded="true" dir="ltr" wotsearchprocessed="true">pic.twitter.com/lMF1Y397k0</a></p>
+              <div wotsearchtarget="_p_nrgummkzgm4to2zq.t.co">&nbsp;</div>
+              </p>
+              <p class="postintro">&nbsp;</p>
+              <p class="readmore"><a href="#">Read More &raquo;</a></p>
+            </li>
+            <li class="last">
+              <p class="posttitle">Opening of New Health Club</p>
+              <p class="publishedon">Published on 11 Sep 2001, by Whutawaye Hotels</p>
+              <p class="postintro">Undress to impress for beach season, our Health Club has state-of-the-art facilities for everyone.<a href="http://t.co/tS8L9OYDWw" data-pre-embedded="true" dir="ltr" wotsearchprocessed="true">pic.twitter.com/tS8L9OYDWw</a></p>
+              <div wotsearchtarget="_p_orjtqtbzj5muiv3x.t.co">&nbsp;</div>
+              <p class="readmore"><a href="#">Read More &raquo;</a></p>
+            </li>
+          </ul>
+        </div>
+        <!-- ########### -->
+        <div id="tabs-2" class="tabcontainer">
+          <ul class="twitterfeed">
+            <li><a href="#">@WhutawayeHotels</a> Celebrate  #ThirstyThursday with the refreshing Gin Basil Smash @WhutawayeHotels! pic.twitter.com/0kkZK4G6Bs . <span>1 day ago</span></li>
+            <li><a href="#">@WhutawayeHotels</a> Enjoy a host of privileges: express check-in, free breakfast, health club access &amp; more @ #WhutawayeHotels #HorizonClub. pic.twitter.com/hKBPWI1YGf. <span>1 day ago</span></li>
+            <li><a href="#">@WhutawayeHotels</a> Splashes of vibrant plants, flowers, &amp; mini pineapples grace the lobby of #WhutawayeHotelGoldCoast. pic.twitter.com/c5ZjDbT1mF. <span>1 day ago</span></li>
+            <li class="last"><a href="#">@WhutawayeHotels</a> Staff at Whutawaye Hotel in #SurfersParadise built turtle sand sculptures to raise awareness for turtle conservation #CSR pic.twitter.com/R5fjYaYYJc  </li>
+            <li class="last"><span>2 days ago</span></li>
+          </ul>
+        </div>
+        <!-- ########### -->
+        <div id="tabs-3" class="tabcontainer">
+          <ul><li><a href="#">www.facebook.com/WhutawayeHotels</a></li>
+            <li><a href="#">www.twitter.com/WhutawayeHotels</a></li>
+            <li><a href="#">www.linkedin.com/WhutawayeHotels</a></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <h2>Keep Up To Date</h2>
+      <ul class="socialize">
+        <li><span>Facebook:</span> <a href="#">www.facebook.com/WhutawayeHotels</a></li>
+        <li><span>Twitter:</span> <a href="#">www.twitter.com/WhutawayeHotels</a></li>
+        <li class="last"><span>LinkedIn:</span> <a href="#">www.linkedin.com/WhutawayeHotels</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="backtotop"><a href="#top" class="topOfPage">To The Top</a></div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="#">whutawayehotels.com</a></p>
+    <p class="fl_right">Website by Daniel<a href="http://www.os-templates.com/" title="Free Website Templates"></a></p>
+  </div>
+</div>
+</body>
+</html>
